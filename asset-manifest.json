@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Hydra/static/css/main.ba119198.css",
+    "main.js": "/Hydra/static/js/main.441697ee.js",
+    "static/media/formBg.png": "/Hydra/static/media/formBg.7b800c9edd643da23ddc.png",
+    "static/media/boyVR.jpg": "/Hydra/static/media/boyVR.5fd061c7d92b82afdfe8.jpg",
+    "static/media/girlVR.jpg": "/Hydra/static/media/girlVR.4b228aef583fbb24ddc3.jpg",
+    "static/media/techBg.jpg": "/Hydra/static/media/techBg.2270f603fe9141f9e399.jpg",
+    "static/media/infoPanel.png": "/Hydra/static/media/infoPanel.80acd6611993891b47df.png",
+    "static/media/cardBg.png": "/Hydra/static/media/cardBg.abc64242c41973063890.png",
+    "static/media/card1.jpg": "/Hydra/static/media/card1.90d479a52e783591dfc4.jpg",
+    "static/media/card4.jpg": "/Hydra/static/media/card4.45c0233f6e35de087101.jpg",
+    "static/media/card3.jpg": "/Hydra/static/media/card3.4e40752773118eb0914f.jpg",
+    "static/media/card2.jpg": "/Hydra/static/media/card2.f7dab0a8c0c102b3825c.jpg",
+    "static/media/slick.svg": "/Hydra/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Hydra/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Hydra/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Hydra/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Hydra/index.html",
+    "main.ba119198.css.map": "/Hydra/static/css/main.ba119198.css.map",
+    "main.441697ee.js.map": "/Hydra/static/js/main.441697ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba119198.css",
+    "static/js/main.441697ee.js"
+  ]
+}
