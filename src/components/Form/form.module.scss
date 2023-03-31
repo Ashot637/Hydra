@@ -1,0 +1,155 @@
+.form {
+    margin-bottom: 100px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../../img/formBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px 110px;
+    border-radius: 100px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.line {
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 65px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    border-radius: 40px;
+    border: 2px solid white;
+    background: none;
+    padding: 27px 42px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+    }
+}
+
+textarea {
+    margin-bottom: 20px;
+    resize: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.required {
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    font-size: 14px;
+    color: #a80000;
+}
+
+@media screen and (max-width: 1000px) {
+    .required {
+        top: 81px;
+    }
+
+    .textareaRequired {
+        top: 27px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inner {
+        padding: 45px 55px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+
+    .row {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    input,
+    textarea {
+        padding: 18px 30px;
+    }
+
+    form {
+        gap: 22px;
+    }
+
+    .inner>svg {
+        width: 300px;
+    }
+
+    .required {
+        top: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .title,
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        margin-bottom: 35px;
+    }
+
+    .inner {
+        padding: 45px 20px;
+        border-radius: 40px;
+        background: #211E2E;
+    }
+}

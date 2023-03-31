@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgba(48, 44, 66, 1);
+    color: white;
+    overflow-x: hidden;
+}
+
+#root {
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:active {
+        color: none;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1275px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    padding: 16px 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+    color: #343045;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1310px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .slick-slider {
+        display: none;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    transform: translateY(-6px);
+}
+
+:root {
+    --swiper-navigation-size: 20px;
+}
+
+.slick-slider {
+    overflow-x: hidden;
+}
+
+.slick-next:before {
+    position: absolute;
+    right: 50px;
+}
+
+.slick-prev {
+    z-index: 9999;
+}
+
+.slick-prev:before {
+    position: absolute;
+    left: 50px;
+}

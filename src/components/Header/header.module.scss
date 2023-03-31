@@ -1,0 +1,160 @@
+.header {
+    padding: 30px 0;
+    margin-bottom: 50px;
+}
+
+.inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logoText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.navLink {
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+}
+
+.btn {
+    box-shadow: 0 0 0 2px white inset;
+    color: white;
+    background: none;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+
+.burger {
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.burger>svg {
+    transition: 0.5s;
+
+}
+
+.burgerActive>svg:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.burgerActive>svg:nth-child(2) {
+    display: none;
+}
+
+.burgerActive>svg:nth-child(3) {
+    transform: rotate(315deg) translateY(-8px) translateX(7px);
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+    top: 85px;
+    right: 0;
+    z-index: 999;
+
+    li:nth-child(1) {
+        animation: anim 0.2s;
+    }
+
+    li:nth-child(2) {
+        animation: anim 0.4s;
+    }
+
+    li:nth-child(3) {
+        animation: anim 0.6s;
+    }
+
+    li:nth-child(4) {
+        animation: anim 0.7s;
+    }
+
+    li:nth-child(5) {
+        animation: anim 0.8s;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .logoText {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .logoText {
+        display: flex;
+    }
+
+    .nav,
+    .btns {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    .menu {
+        display: none;
+    }
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        transform: translateX(120px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

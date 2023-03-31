@@ -1,0 +1,55 @@
+.tech {
+    margin-bottom: 100px;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../../img/techBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 160px;
+    height: 300px;
+    gap: 10px;
+    position: relative;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.absolute {
+    position: absolute;
+    top: 265px;
+    left: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .inner {
+        height: 170px;
+    }
+
+    .tech {
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .absolute {
+        display: none;
+    }
+}
